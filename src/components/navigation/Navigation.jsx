@@ -39,9 +39,9 @@ const PageLinksContainer = styled.div`
 
 const PageLinks = () => (
 	<PageLinksContainer>
-		<PageLink to="/about">About</PageLink>
-		<PageLink to="/work">Work</PageLink>
-		<PageLink to="/resume">Resume</PageLink>
+		<PageLink to="/product">Product</PageLink>
+		<PageLink to="/story">Story</PageLink>
+		<PageLink to="/a11y">a11y</PageLink>
 	</PageLinksContainer>
 );
 
