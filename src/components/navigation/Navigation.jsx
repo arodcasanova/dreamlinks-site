@@ -8,8 +8,9 @@ const NavContainer = styled.nav`
 	z-index: 2;
 	display: flex;
 	justify-content: center;
-	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
 `;
+
+// box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
 
 const NavGrid = styled.div`
 	display: grid;

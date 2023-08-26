@@ -11,7 +11,7 @@ const HomeContainer = styled.header`
 const HomeLink = () => (
 	<a href=".">
 		<HomeContainer>
-			<CaptionBold>Adrian Rodriguez</CaptionBold>
+			<CaptionBold>Dreamlinks</CaptionBold>
 		</HomeContainer>
 	</a>
 );
