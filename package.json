@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "homepage": "http://arodcasanova.github.io/dreamlinks-site",
+  "name": "dreamlinks",
+  "homepage": "http://dreamlinks.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
