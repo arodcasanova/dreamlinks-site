@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "http://arodcasanova.github.io/portfolio",
+  "homepage": "http://arodcasanova.github.io/dreamlinks-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,6 +38,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.2.3"
   }
 }
