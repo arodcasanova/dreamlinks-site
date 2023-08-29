@@ -1,7 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Product from 'components/main/product/Product';
-import Resume from 'components/main/story/Story';
 import Story from './story/Story';
 
 const MainRouter = () => (

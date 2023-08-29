@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { CaptionBold } from 'components/core/Type';
 import dreamlinksLogo from 'images/dreamlinks-logo-type.svg'
 
 const HomeContainer = styled.header`
@@ -10,7 +9,8 @@ const HomeContainer = styled.header`
 `;
 
 const DreamlinksLogo = styled.img.attrs({
-	src: dreamlinksLogo
+	src: dreamlinksLogo,
+	alt: 'Dreamlinks'
 })`
 	height: 2rem; 
 `;
