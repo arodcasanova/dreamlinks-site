@@ -19,11 +19,13 @@ const NavGrid = styled.div`
 	padding: 1rem 2rem;
 	width: 100%;
 	max-width: 50rem;
-	@media (max-width: 700px) {
-		grid-template-columns: auto;
-		grid-template-rows: auto 1rem auto;
-	}
+	
 `;
+
+// @media (max-width: 700px) {
+// 	grid-template-columns: auto;
+// 	grid-template-rows: auto 1rem auto;
+// }
 
 const PageLinksContainer = styled.div`
 	display: flex;
@@ -41,7 +43,7 @@ const PageLinks = () => (
 	<PageLinksContainer>
 		<PageLink to="/product">Product</PageLink>
 		<PageLink to="/story">Story</PageLink>
-		<PageLink to="/a11y">a11y</PageLink>
+		{/* <PageLink to="/a11y">a11y</PageLink> */}
 	</PageLinksContainer>
 );
 
