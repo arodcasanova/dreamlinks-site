@@ -36,9 +36,15 @@ const ProductContainer = styled.div`
 `;
 
 const StoryContainer = styled.div`
-	padding: 3rem 2rem;
+	padding: 3.5rem 13rem;
 	width: 100%;
 	max-width: 50rem;
+	@media (max-width: 700px) {
+		padding: 3rem 2rem;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		grid-gap: 3.25rem;
+	}
 `;
 
 const ProductCardsContainer = styled.div`
@@ -91,7 +97,7 @@ const Product = () => (
 		</HeroSection>
 		<ProductSection>
 			<ProductContainer>
-				<HeaderMedium>A really cool headline.</HeaderMedium>
+				<HeaderMedium id="product-header">A really cool headline.</HeaderMedium>
 				<ProductCardsContainer>
 					<ProductCard>
 						<CardSymbol bgSrc={makeSymbol} />
@@ -113,7 +119,7 @@ const Product = () => (
 		</ProductSection>
 		<StorySection>
 			<StoryContainer>
-				<StoryLabel>Our story</StoryLabel>
+				<StoryLabel id="story-header">Our story</StoryLabel>
 				<HeaderMedium>Kids love to build things.</HeaderMedium>
 				<StoryCopy>Kids love to build things, but today’s toys and tools leave a lot of people out. Our mission is to give everyone the opportunity to build their dreams.
 Story: Adrian and Gabe have been best friends since they met as Freshman at Stanford. Adrian’s near total blindness and love of design inspired him to make creativity easy for everyone. Gabe’s passion for using computer science to impact society led him to build the magic that makes Dreamlinks possible. .</StoryCopy>

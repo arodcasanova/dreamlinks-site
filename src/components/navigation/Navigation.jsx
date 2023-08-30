@@ -41,8 +41,8 @@ const PageLinksContainer = styled.div`
 
 const PageLinks = () => (
 	<PageLinksContainer>
-		<PageLink to="/product">Product</PageLink>
-		<PageLink to="/story">Story</PageLink>
+		<PageLink to="#product-header">Product</PageLink>
+		<PageLink to="#story-header">Story</PageLink>
 		{/* <PageLink to="/a11y">a11y</PageLink> */}
 	</PageLinksContainer>
 );

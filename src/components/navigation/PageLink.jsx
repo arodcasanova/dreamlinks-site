@@ -1,12 +1,18 @@
 import React from 'react';
 // import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import { CaptionBold } from 'components/core/Type';
 
+// const PageLink = ({ to, children }) => (
+// 	<NavLink to={to}>
+// 		<CaptionBold>{children}</CaptionBold>
+// 	</NavLink>
+// );
+
 const PageLink = ({ to, children }) => (
-	<NavLink to={to}>
+	<a href={to}>
 		<CaptionBold>{children}</CaptionBold>
-	</NavLink>
+	</a>
 );
 
 export default PageLink;
