@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HeaderLarge, HeaderMedium, Paragraph, CaptionMedium } from 'components/core/Type'; 
+import cubeSpin from 'images/cube-spin.gif'
 import makeSymbol from 'images/hand-open.svg'
 import learnSymbol from 'images/hand-reading-braille.svg'
 import playSymbol from 'images/hands-clap.svg'
@@ -10,6 +11,10 @@ const HeroSection = styled.section`
 	justify-content: center;
 	background-color: white;
 `;
+
+const HeroImage = styled.img.attrs({ src: cubeSpin })`
+	height: 20rem;
+`
 
 const ProductSection = styled.section`
 	display: flex;
@@ -26,11 +31,11 @@ const HeroContainer = styled.header`
 	padding: 3rem 2rem;
 	width: 100%;
 	max-width: 50rem;
+	text-align: center;
 `;
 
 const ProductContainer = styled.div`
-	text-align: center;
-	padding: 3rem 2rem;
+	padding: 3.75rem 2rem;
 	width: 100%;
 	max-width: 50rem;
 `;
@@ -48,13 +53,14 @@ const StoryContainer = styled.div`
 `;
 
 const ProductCardsContainer = styled.div`
-	margin-top: 3rem;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr; 
+	margin-top: 4rem;
+	grid-template-columns: auto auto auto;
+	column-gap: 4rem; 
 	@media (max-width: 700px) {
 		grid-template-columns: 1fr;
 		justify-items: center;
-		grid-gap: 3.25rem;
+		row-gap: 3.25rem;
 	}
 `;
 
@@ -79,7 +85,7 @@ const StoryLabel = styled(CaptionMedium)`
 	display: inline-block;
 	padding: .2rem .4rem;
 	background-color: #F8F6FC;
-	border-radius: 8px;
+	border-radius: 6px;
 	margin-bottom: 1rem;
 `;
 
@@ -92,12 +98,13 @@ const Product = () => (
 	<main>
 		<HeroSection>
 			<HeroContainer>
-				<HeaderLarge>Unleash your <br /> imagination </HeaderLarge>
+				<HeaderLarge style={{ marginBottom: '0.5rem' }}> What will you build? </HeaderLarge>
+				<HeroImage />
 			</HeroContainer>
 		</HeroSection>
 		<ProductSection>
 			<ProductContainer>
-				<HeaderMedium id="product-header">A really cool headline.</HeaderMedium>
+				<HeaderMedium id="product-header" style={{ textAlign: 'center', marginBottom: '4rem' }}>Magnetic blocks that bridge your head and your hands</HeaderMedium>
 				<ProductCardsContainer>
 					<ProductCard>
 						<CardSymbol bgSrc={makeSymbol} />
