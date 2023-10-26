@@ -19,6 +19,7 @@ const HeroSection = styled.section`
 
 const HeroImage = styled.img.attrs({ src: cubeSpin })`
   height: 20rem;
+  margin-right: 1.25rem;
 `;
 
 const ProductSection = styled.section`
@@ -107,6 +108,7 @@ const Video = styled.iframe.attrs({
   margin-bottom: 3.5rem;
   border: none;
   text-align: center;
+  box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.25);
 `;
 
 const VideoSection = styled.section`
@@ -183,7 +185,7 @@ const Product = () => (
           freshmen at Stanford, and they have been working on projects related
           to Dreamlinks together ever since. Gabe has advised Adrian since he
           started teaching, and he builds the magic that makes Dreamlinks
-          possible..
+          possible.
         </StoryCopy>
       </StoryContainer>
     </StorySection>
