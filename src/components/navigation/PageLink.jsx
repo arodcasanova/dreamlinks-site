@@ -11,7 +11,7 @@ import { CaptionBold } from "components/core/Type";
 
 const CaptionWithHover = styled(CaptionBold)`
   :hover {
-    color: #5f00a9;
+    color: #4427b8;
     transition: color ease-in-out 0.25s;
   }
 `;
